@@ -1,0 +1,136 @@
+:root{
+	--menu-height: 4.25rem;
+	--desktop-menu: 7.5rem;
+}
+
+body {
+	margin-top: 4.25rem;
+	margin-top: var(--menu-height);
+}
+
+.material-icons {
+	font-size: 1em;
+}
+
+header {
+	width: 100%;
+	background-color: #ff6700;
+	background-color: var(--primary-color);
+	position: fixed;
+	top: 0;
+	height: 4.25rem;
+	height: var(--menu-height);
+	z-index: 999;
+}
+
+header nav {
+	width: 80%;
+	height: 100%;
+	position: fixed;
+	top: 4.25rem;
+	top: var(--menu-height);
+	left: -100%;
+	background-color: #333;
+	z-index: 999;
+}
+
+header nav ul {
+	list-style-type: none;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 1rem;
+	color: #fff;
+	color: var(--text-primary-color);
+	text-decoration: none;
+	transition: color 0.3s;
+	transition: background 0.3s;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	-webkit-tap-highlight-color: transparent;
+}
+
+header nav ul li a:hover {
+	color: #333;
+	background-color: #fff;
+}
+
+header nav ul li a:active {
+	color: #000;
+	background-color: #aaa;
+}
+
+.active {
+	color: #fff;
+	background-color: #ff6700;
+	color: var(--text-primary-color);
+	background-color: var(--primary-color);
+}
+
+
+li a .material-icons {
+	margin-right: .5rem;
+}
+
+.menu-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4.25rem;
+	height: var(--menu-height);
+	padding: 1rem;
+}
+
+.btn-menu.material-icons {
+	color: #fff;
+	color: var(--text-primary-color);
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.main-title {
+	margin: 0 auto;
+	color: #fff;
+	color: var(--text-primary-color);
+	font-weight: 500;
+}
+
+@media screen and (min-width: 48em){
+	.btn-menu {
+		display: none;
+	}
+	
+	header nav {
+		left: 0;
+		background: #333;
+		width: 100%;
+		height: auto;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	header nav ul li a:hover{ 
+		color: #333; 
+	}
+
+	header nav ul li a:active {
+		color: #000;
+		background-color: #ccc;
+	}
+
+	body {
+		margin-top: 7.5rem;
+		margin-top: var(--desktop-menu);
+	}
+
+	.main-title {
+		font-weight: bold;
+	}
+
+	header nav ul li a {
+		border: none;
+	}
+}

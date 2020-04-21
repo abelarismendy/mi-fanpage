@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#ff6700"/>
+		<title>Mi Fanpage</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="src/css/style.css">
+		<link rel="stylesheet" href="src/css/menu.css">
+		<link rel="stylesheet" href="src/css/slide.css">
+		<link rel="shortcut icon" href="src/img/favicon.ico">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<style>
+			img[src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+				display: none;
+			}
+		</style>
+		<header>
+			<div class="menu-bar">
+				<i class="btn-menu  material-icons">menu</i>
+				<h1 class="main-title">Mi Fanpage</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="" class="active"><i class="material-icons">home</i>Inicio</a></li>
+					<li><a href="./news/"><i class="material-icons">list_alt</i>Noticias</a></li>
+					<li><a href="./products/"><i class="material-icons">devices</i>Productos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="slider" id="slideshow">
+			<div class="slide">
+				<div class="elements">
+					<div id="slide1" class="item-slide  bg1 item-active">
+						<h2>Xiaomi desarrolla una tecnología de carga rápida en 17 minutos</h2>
+					</div>
+					<div id="slide2" class="item-slide  bg2">
+						<h2>Así es el nuevo Mi Notebook de xiaomi</h2>
+					</div>
+					<div id="slide3" class="item-slide  bg3">
+						<h2>Redmi tiene un nuevo producto con los vengadores</h2>
+					</div>
+				</div>
+				<div class="nav-indicator">
+					
+					<div class="cont-indicator">
+						<div id="indi1" class="indicator current"></div>
+						<div id="indi2" class="indicator"></div>
+						<div id="indi3" class="indicator"></div>
+					</div>
+				</div>
+				<div class="arrows">
+					<div class="prev"><i class="material-icons" id="prev">arrow_back_ios</i></div>
+					<div class="next"><i class="material-icons" id="next">arrow_forward_ios</i></div>
+				</div>
+			</div> 
+		</section>
+		<section class="main">
+			<article class="container  phones">
+				<h1 class="phones__title">Smartphones</h1>
+				<div class="phone__item  phone1">
+					<h2 class="phone__title"><a href="#mi9">Xiaomi Mi 9</a></h2>
+				</div>
+				<div class="phone__item  phone2">
+                    <h2 class="phone__title"><a href="./products/#mimix3">Xiaomi Mi Mix 3 5G</a></h2>
+				</div>
+				<div class="phone__item  phone3">
+					<h2 class="phone__title"><a href="./products/#mimix2s">Xiaomi Mi Mix 2s</a></h2>
+				</div>
+				<div class="phone__item phone4">
+					<h2 class="phone__title"><a href="./products/#mi9se">Xiaomi Mi 9 SE</a></h2>
+				</div>
+				<div class="phone__item  phone5">
+					<h2 class="phone__title"><a href="./products/#mi8lite">Xiaomi Mi 8 lite</a></h2>
+				</div>
+				<div class="phone__item  phone6">
+					<h2 class="phone__title"><a href="./products/#mia2">Xiaomi Mi A2</a></h2>
+				</div>
+				<div class="phone__item  phone7">
+					<h2 class="phone__title"><a href="./products/#note7">Redmi Note 7</a></h2>
+				</div>
+				<div class="more">
+					<i class="material-icons"><a href="./products/">more_horiz</a></i>
+				</div>
+			</article>
+			<arcticle class="container specs" id="mi9">
+				<h1 class="specs__title">Xiaomi Mi 9</h1>
+				<div class="imagen"></div>
+				<div class="specs__container">
+					<div class="specs__contain procesador">
+						<i class="material-icons">memory</i>
+						<p>Snapdragon 855</p>
+					</div>
+					<div class="specs__contain screen">
+						<i class="material-icons">fullscreen</i>
+						<p>Super AMOLED 6,39"</p>
+					</div>
+					<div class="specs__contain camera">
+						<i class="material-icons">camera</i>
+						<p>48 MP, f/1.8, 27mm (wide), 1/2", 0.8µm, Laser/PDAF</p>
+					</div>
+					<div class="specs__contain video">
+						<i class="material-icons">videocam</i>
+						<p>2160p 30/60fps, 1080p 960fps</p>
+					</div>
+					<div class="specs__contain front-camera">
+						<i class="material-icons">camera_front</i>
+						<p>20MP f/2.0</p>
+					</div>
+					<div class="specs__contain batery">
+						<i class="material-icons">battery_full</i>
+						<p>3300 mAh Li-Po</p>
+					</div>
+				</div>
+				<div class="more__specs">
+					<i class="material-icons"><a href="https://www.gsmarena.com/xiaomi_mi_9-9507.php">more_horiz</a></i>
+				</div>
+			</arcticle>
+            
+            <footer>
+                <div class="container disclaim">
+                    <p class="comercial"><a href="http://vizze.000webhostapp.com">Mi Fanpage</a> No responde a fines lucrativos ni comerciales.</p>
+                    <p class="disclaimer">Esta página no esta asociada con la marca ® <a href="http://mi.com">Mi</a></p>
+                </div>
+                <div class="container">
+                    <p class="copyright">Copyright 2019 © Mi Fanpage</p>
+                    <p class="copyright"><a href="http://linkedin.com/in/ArismendyC">Arismendy C.</a></p>
+                </div>
+            </footer>
+            
+		</section>
+		<script src="src/js/menu.js"></script>
+		<script src="src/js/slide.js"></script>
+	</body>
+</html>

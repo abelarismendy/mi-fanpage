@@ -1,0 +1,544 @@
+:root {
+	--primary-color: #ff6700;
+	--dark-primary-color: #E64A19;
+	/*--default-primary-color: #FF5722;*/
+	--light-primary-color: #FFCCBC;
+	--text-primary-color: #FFFFFF;
+	--accent-color:#795548;
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+	--divider-color: #BDBDBD;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #ddd;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.phones {
+	z-index: -3;
+	background-color: #333;
+}
+
+.phone__item {
+	display: flex;
+	width: 50%;
+	height: 25vw;
+	background-color: #333;
+	align-items: center;
+	transition: all .5s;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+.phone1 {
+	background-image: url(../img/product-mi9.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone2 {
+	background-image: url(../img/product-mi-mix-3.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone3 {
+	background-image: url(../img/product-mi-mix-2s.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone4 {
+	background-image: url(../img/product-mi-9-se.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone5 {
+	background-image: url(../img/product-mi-8-lite.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone6 {
+	background-image: url(../img/product-mia2.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.phone7 {
+	background-image: url(../img/product-note7.png);
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.phone__title {
+    margin-left: 22.5vw;
+	margin-right: 2.5vw;
+	width: 100%;
+}
+
+.phone__title a {
+	color: #aaa;
+	transition: all .5s;
+	text-align: center;
+	font-size: .75rem;
+	font-weight: 300;
+}
+
+.phone__item:hover {
+	background-color: #222;
+}
+
+.phone__item:hover .phone__title a {
+	color: #fff;
+}
+
+.phone__item:active {
+	background-color: #000;
+}
+
+.phones__title, .specs__title {
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	font-weight: 300;
+	color: #fff;
+}
+
+.phone__title a {
+	text-decoration: none;
+}
+
+.specs__title {
+	background: none;
+}
+
+.more {
+	width: 100%;
+	color: #aaa;
+	font-size: 3rem;
+	display: flex;
+}
+.more a {
+	color: #aaa;
+	width: 100%;
+}
+
+.more i {
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	transition: all .5s;
+	padding: .5rem;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.more i:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.more i:active {
+	background-color: #000;
+}
+
+.more i a {
+    text-decoration: none;
+}
+
+.specs {
+	background-color: #ff6700;
+}
+
+.specs .imagen {
+	min-height: 250px;
+	height: 50vw;
+	width: 100%;
+	background-image: url(../img/product-mi9.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mimix3 .imagen {
+    background-image: url(../img/product-mi-mix-3.png);
+}
+
+#mimix2s .imagen {
+    background-image: url(../img/product-mi-mix-2s.png)
+}
+
+#mi9se .imagen {
+    background-image: url(../img/product-mi-9-se.png)
+}
+
+#mi8lite .imagen {
+    background-image: url(../img/product-mi-8-lite.png)
+}
+
+#mia2 .imagen {
+    background-image: url(../img/product-mia2.png)
+}
+
+#note7 .imagen {
+    background-image: url(../img/product-note7.png)
+}
+
+.specs__container {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+.specs__contain {
+	display: flex;
+	width: 50%;
+	color: #fff;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+.more__specs {
+	display: flex;
+	width: 100%;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+}
+
+.more__specs i.material-icons {
+	width: 100%;
+	text-align: center;
+	padding: .5rem;
+	cursor: pointer;
+	transition: all .5s;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.more__specs .material-icons a {
+	color: #fff;
+	text-decoration: none;
+    transition: all .5s;
+}
+
+.more__specs i.material-icons:hover {
+	background-color: #fff;
+}
+
+.more__specs i.material-icons:hover a {
+	color: #ff6700;
+}
+
+.more__specs i.material-icons:active {
+	background-color: #aaa;
+	color: #dd4500;
+}
+
+.specs__container i.material-icons {
+	margin-right: .5rem;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer .container {
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer .container p {
+    color: #aaa;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+}
+
+footer .container a {
+    color: #ff6700;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+footer .container a:hover {
+    color: #eee;
+}
+
+footer .container a:active {
+    color: #999;
+}
+
+footer .container a:visited {
+    color: #dd4700;
+}
+
+footer .container.disclaim {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.copyright {
+    color: #777 !important;
+}
+
+.articulo {
+	background-color: #fff;
+	padding: .5rem;
+	border-radius: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.articulo img {
+    border-radius: 1rem;
+}
+
+.title-art {
+	text-align: center;
+	width: 100%;
+	color: #ff6700;
+}
+
+.articulo h3 {
+	width: 100%;
+}
+
+.first-img-art, .img-art {
+	margin: .5rem 0;
+}
+
+.p-art {
+	text-align: justify;
+	margin: .5rem 0;
+}
+
+.articulo a {
+	color: #ff6700;
+}
+
+.articulo a:hover {
+	color: #333;
+}
+
+.articulo a:active {
+	color: #000;
+}
+
+.articulo a:visited {
+	color: #ff3700;
+}
+
+.new-title {
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+}
+
+.new-title a {
+    text-decoration: none;
+}
+
+.learn-more {
+    width: 100%;
+    text-align: right;
+}
+
+.news-div:nth-child(2), .news-div:nth-child(3) {
+    margin: 1rem auto;
+}
+
+.video-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 30em) {
+	.phone__title a {
+		font-size: 1rem;
+	}
+
+	.phones__title. .specs__title {
+		font-size: 1.75rem;
+	}
+
+	.specs__contain {
+		font-size: 1.4rem;
+	}
+    
+    .title-art, .new-title {
+        font-size: 1.75rem;
+    }
+    
+    .articulo {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 40em) {
+	.phone__title a {
+		font-size: 1.25rem;
+	}
+
+	.phones__title, .specs__title {
+		font-size: 2rem;
+		font-weight: 500;
+	}
+    
+}
+
+@media screen and (min-width: 48em) {
+	.container {
+		width: 95%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.phone__item {
+		background-position: center;
+		width: 33.3333333%;
+		height: 20vh;
+	}
+
+	.phone__item:hover {
+		background-position: left;
+	}
+	
+	.phone__title {
+		margin-left: 17.5vh;
+		margin-right: 2.5vh;
+	}
+
+    .phone__title a {
+        opacity: 0;
+        font-size: 1rem; 
+    }
+    
+	.phone__item:hover .phone__title a {
+		opacity: 1;
+		font-size: 1.25rem;
+	}
+
+	.phones__title, .specs__title {
+		font-size: 1.75rem;
+	}
+
+	.specs .imagen {
+		width: 25%;
+		height: auto;
+	}
+
+	.specs__container {
+		width: 75%;
+		margin: 0;
+	}
+    
+    .articulo {
+        margin-top: 9rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+    
+    .title-art, .new-title {
+        font-size: 2rem;
+    }
+    
+    .articulo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .news-div img {
+        width: 50%;
+    }
+    
+    .p-new {
+        width: 50%;
+        padding: 0 1rem;
+        margin: 0;
+    }
+    
+    .products .specs {
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .products .specs:nth-child(1) {
+        margin-top: 9rem;
+    }
+    
+    .products .specs .more__specs i {
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+@media screen and (min-width: 64em) {
+	.phone__item {
+		width: 25%;
+		height: 20vh;
+	}
+
+	.phones__title, .specs__title {
+		font-size: 2rem;
+	}
+
+	.phone7 {
+		display: flex;
+	}
+
+	.more {
+		width: 25%;
+		height: 20vh;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.more i {
+		width: auto;
+		height: auto;
+		border-radius: 50%;
+	}
+
+    footer .container p {
+        width: 50%;
+    }
+    
+    .copyright {
+        width: 1005;
+    }
+    .p-new {
+        font-size: 1.5rem;
+    }
+}
